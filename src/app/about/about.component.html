@@ -1,0 +1,9 @@
+<p>
+  about works!
+</p>
+<button (click)="getPosts()">Photo me</button>
+<button (click)="getFriend()">Photo friend</button>
+<div *ngFor="let item of datas">
+  {{item.id}}
+  <img src={{item.images.thumbnail.url}}/>
+</div>
